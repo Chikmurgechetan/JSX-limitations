@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import Wraper from "../Helper/Wraper";
 
 import Button from "../UI/Button";
 
@@ -50,7 +51,7 @@ const AddUser = props =>{
 
 
     return(
-     <div>
+     <Wraper>
         {error && (
         <ErrorModul 
         title={error.title}
@@ -78,7 +79,7 @@ const AddUser = props =>{
 
     </form>
     </Card>
-    </div>
+    </Wraper>
     )
 }
 
